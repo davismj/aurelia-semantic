@@ -64,7 +64,7 @@ System.register(['aurelia-framework', 'jquery', 'semantic-ui'], function (_expor
       $ = _jquery.default;
     }, function (_semanticUi) {}],
     execute: function () {
-      _export('SProgressCustomElement', SProgressCustomElement = (_dec = inject(Element), _dec2 = customElement('s-progress'), _dec3 = bindable({ defaultBindingMode: bindingMode.oneTime }), _dec4 = bindable({ defaultBindingMode: bindingMode.oneTime }), _dec(_class = _dec2(_class = (_class2 = function () {
+      _export('SProgressCustomElement', SProgressCustomElement = (_dec = inject(Element), _dec2 = customElement('s-progress'), _dec3 = bindable({ defaultBindingMode: bindingMode.oneTime }), _dec4 = bindable({ defaultBindingMode: bindingMode.oneWay }), _dec(_class = _dec2(_class = (_class2 = function () {
         function SProgressCustomElement(element) {
           _classCallCheck(this, SProgressCustomElement);
 
@@ -78,8 +78,8 @@ System.register(['aurelia-framework', 'jquery', 'semantic-ui'], function (_expor
         }
 
         SProgressCustomElement.prototype.bind = function bind() {
-          this.label = this.label || this.element.getAttribute('label');
           this.labeled = this.labeled || this.element.hasAttribute('labeled');
+          this.label = this.label || this.element.getAttribute('label');
           this.progress = this.progress || this.element.getAttribute('progress');
         };
 

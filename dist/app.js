@@ -21,7 +21,7 @@ System.register([], function (_export, _context) {
 
         App.prototype.configureRouter = function configureRouter(config, router) {
           config.title = 'Aurelia';
-          config.map([{ route: ['', 'progress'], name: 'progress', moduleId: 'progress', title: 'Progress' }]);
+          config.map([{ route: ['progress'], name: 'progress', moduleId: 'progress', title: 'Progress' }, { route: ['', 'accordion'], name: 'accordion', moduleId: 'accordion', title: 'Accordion' }]);
 
           this.router = router;
         };
